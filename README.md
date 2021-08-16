@@ -1,7 +1,7 @@
-Persona theme for NodeBB
+RC theme for NodeBB
 ====================
 
-Persona is the new default theme for NodeBB as of v0.7.1
+RC is the new default theme for us, based on Persona NodeBB Theme as of v0.7.1
 
 ## Addons
 
