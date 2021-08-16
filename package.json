@@ -1,14 +1,14 @@
 {
-  "name": "nodebb-theme-persona",
-  "version": "11.1.2",
+  "name": "nodebb-theme-rc",
+  "version": "1.0.0",
   "nbbpm": {
     "compatibility": "^1.17.0"
   },
-  "description": "Persona theme for NodeBB",
+  "description": "RC theme for NodeBB",
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-theme-persona"
+    "url": "https://github.com/vandango/nodebb-theme-rc"
   },
   "keywords": [
     "nodebb",
@@ -19,24 +19,14 @@
   ],
   "contributors": [
     {
-      "name": "Andrew Rodrigues",
-      "email": "andrew@designcreateplay.com",
-      "url": "https://github.com/psychobunny"
-    },
-    {
-      "name": "Julian Lam",
-      "email": "julian@designcreateplay.com",
-      "url": "https://github.com/julianlam"
-    },
-    {
-      "name": "Barış Soner Uşaklı",
-      "email": "baris@designcreateplay.com",
-      "url": "https://github.com/barisusakli"
+      "name": "Jonathan Naumann",
+      "email": "jonathan@toenda.com",
+      "url": "https://github.com/vandango"
     }
   ],
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/psychobunny/nodebb-theme-persona/issues"
+    "url": "https://github.com/vandango/nodebb-theme-rc/issues"
   },
   "dependencies": {
     "pulling": "^2.0.0",
