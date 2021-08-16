@@ -9,17 +9,17 @@ library.init = function(params, callback) {
 	var app = params.router;
 	var middleware = params.middleware;
 
-	app.get('/admin/plugins/persona', middleware.admin.buildHeader, renderAdmin);
-	app.get('/api/admin/plugins/persona', renderAdmin);
+	app.get('/admin/plugins/rc', middleware.admin.buildHeader, renderAdmin);
+	app.get('/api/admin/plugins/rc', renderAdmin);
 
 	callback();
 };
 
 library.addAdminNavigation = function(header, callback) {
 	header.plugins.push({
-		route: '/plugins/persona',
+		route: '/plugins/rc',
 		icon: 'fa-paint-brush',
-		name: 'Persona Theme'
+		name: 'RC Theme'
 	});
 
 	callback(null, header);
@@ -56,7 +56,7 @@ library.defineWidgetAreas = function(areas, callback) {
 };
 
 library.getThemeConfig = async function(config) {
-	const settings = await meta.settings.get('persona');
+	const settings = await meta.settings.get('rc');
 	config.hideSubCategories = settings.hideSubCategories === 'on';
 	config.hideCategoryLastPost = settings.hideCategoryLastPost === 'on';
 	config.enableQuickReply = settings.enableQuickReply === 'on';
@@ -64,7 +64,7 @@ library.getThemeConfig = async function(config) {
 };
 
 function renderAdmin(req, res, next) {
-	res.render('admin/plugins/persona', {});
+	res.render('admin/plugins/rc', {});
 }
 
 library.addUserToTopic = async function (hookData) {
